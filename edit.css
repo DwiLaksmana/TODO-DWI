@@ -1,0 +1,69 @@
+body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            transition: box-shadow 0.3s ease;
+        }
+        .card h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .card input[type="text"], .card input[type="date"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        .card input[type="text"]:focus, .card input[type="date"]:focus {
+            border-color: #0056b3;
+            outline: none;
+        }
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+        }
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 48%;
+        }
+        .btn.save {
+            background-color: #28a745;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .btn.cancel {
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .btn.save:hover {
+            background-color: #218838;
+        }
+        .btn.cancel:hover {
+            background-color: #5a6268;
+        }
